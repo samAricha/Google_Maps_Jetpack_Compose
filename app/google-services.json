@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "823888350212",
+    "project_id": "maps-d7a77",
+    "storage_bucket": "maps-d7a77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823888350212:android:4c1eaa97806286c35eb951",
+        "android_client_info": {
+          "package_name": "com.teka.googlemapsproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVlEgM56E9UdN4aZ6WVVYNYcpNEJv3OhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823888350212:android:7fc2ee78deaa14c75eb951",
+        "android_client_info": {
+          "package_name": "ro.alexmamo.firestoregooglemapsjetpackcompose"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVlEgM56E9UdN4aZ6WVVYNYcpNEJv3OhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
