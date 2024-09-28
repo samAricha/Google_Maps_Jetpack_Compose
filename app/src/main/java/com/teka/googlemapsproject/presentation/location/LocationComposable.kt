@@ -21,7 +21,22 @@ fun LocationComposable(context: Context) {
     // Request location permissions
     RequestLocationPermission(
         onPermissionGranted = {
-            getLastUserLocation(
+            getCurrentLocation(
+                context = context,
+                fusedLocationProviderClient = fusedLocationProviderClient,
+                onSuccess = { latitude, longitude ->
+                    locationText = "Lat: $latitude, Long: $longitude"
+                },
+                onFailure = { exception ->
+                    // Handle failure in getting location
+                    locationText = "Failed to get location"
+                    Toast.makeText(context, exception.message, Toast.LENGTH_SHORT).show()
+                }
+            )
+
+
+
+           /* getLastUserLocation(
                 context = context,
                 fusedLocationProviderClient = fusedLocationProviderClient,
                 onSuccess = { latitude, longitude ->
@@ -31,7 +46,7 @@ fun LocationComposable(context: Context) {
                     locationText = "Failed to get location"
                     Toast.makeText(context, it.message, Toast.LENGTH_SHORT).show()
                 }
-            )
+            ) */
         },
         onPermissionDenied = {
             locationText = "Location permission denied."
